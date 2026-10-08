@@ -693,4 +693,5 @@ async def cmd_remove_admin(message: Message):
 
     if ok:
         await utils.safe_send(message.bot, message.chat.id, f"Администратор {target} удалён.")
-        await utils.safe_send(message.bot, target, "Ваш доступ
+        await utils.safe_send(message.bot, target, "Ваш доступ администратора отозван."
+)
