@@ -1,15 +1,15 @@
-from aiogram.fsm.state import State, StatesClass
+from aiogram.fsm.state import State, StatesGroup
 
 
-class CaptchaStates(StatesClass):
+class CaptchaStates(StatesGroup):
     captcha = State()
 
 
-class UserStates(StatesClass):
+class UserStates(StatesGroup):
     greeting = State()
 
 
-class AdminStates(StatesClass):
+class AdminStates(StatesGroup):
     name = State()
     loading = State()
     wait_unblock = State()
